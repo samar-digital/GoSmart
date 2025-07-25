@@ -1,43 +1,125 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GO SMART HOME - Digital Entrepreneurship Website by SamAr" />
+  <title>GO SMART HOME</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      padding: 1em;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 2em;
+      background-color: #f4f4f4;
+    }
+    .hero h1 {
+      margin-bottom: 0.5em;
+    }
+    .section {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 0.5em;
+      font-size: 1em;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #222;
+      color: white;
+    }
+    button.login-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
 
-<html>
-   
-   <head>
-   <title>GO SMART HOME</title>
-   </head>
- <body>
+<header>
+  <div><strong>GO SMART HOME</strong></div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+  </nav>
+</header>
 
-   <align><center></align>
- <h1><b>G0 SMART H0ME:</h1>
-<h1><i>Get Your Free Ebook Now!</h1>
- <p><a href="https://alison.com?utm_source=alison_user&utm_medium=affiliates&utm_campaign=44111086">CLAIM YOUR CERTIFICATE</a></p>
- <h1><b><i><u></u></i>Digital Enterpreneurship Website</h1>
- <img src="PJ.png" alt="The Picture is for Brand awareness purpose" width="900">
-<align><center></align>
-<h><b>About Me</h>
- <p>Based on career preferences, there is a huge amount of competitions between a variety of fields which are nowadays more popular because of the sudden market demand for skill development. Excellence in higher education requires a huge interest in developing necessary soft skills which are'nt actually taught in our primary or middle schools due to lack of having experienced parents and society it is very difficult for us to have everyone a good quality of education for a child's future.</p> 
-<p>Through my passion to reinnovate and reconstruct logical representation of an idea based on mass communication. Student of Data Analytics, Web Development, Social Media Strategy, Psychology and AIML. I am also learning prompt engineering through which I can complete my 80% work in 20% efforts.</p>
-<p>In general I understand that being stuck with too much time consuming work , doing your 9 to 5 average job, isnâ€™t it very hesitating and pressurizing a person to feel exhausted even after a high education in academic field like BA, BBA, Btech, BCom and much more. In my concern, we should replace the tradition rat race into self-competition, rote learning into roadmap building, grades into Empowerment.</p> 
-<p>"A curious mind from the valleys of Kashmir, walking the line between ancient wisdom and 
-digital innovation." 
-<p>I’m Mehraj Ahmad Itoo, known online as Arish or SamAr. At just 18, I’ve already started 
-building a multi-disciplinary path in:</p>
- 
-<p>Psychology & Criminology</p> 
-<p>Coding (HTML, Python), Ethical Hacking Basics</p> 
-<p>Canva Product Design</p>
-<p>Affiliate & WhatsApp Marketing</p> 
-<p>Content Creation, AI Tools, & Digital Strategy</p> 
-<p>I’m not just learning—I’m executing. I’m here to build, sell, solve, and serve. If you need 
-creative solutions, smart content, or digital product strategy—I’m your guy.</p>
-<img src="GSM.png" alt="Motive" width="800">
+<div class="hero">
+  <h1>Empowering Students with Smart Learning & Career Tools</h1>
+  <p>Get your free ebook now and start your journey in digital entrepreneurship.</p>
+  <img src="PJ.png" alt="Brand Awareness Image" width="800" />
+</div>
 
-     <!-- this is a comment: My favourite quote below --!>
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>I’m Mehraj Ahmad Itoo, also known online as SamAr — an 18-year-old digital explorer from Kashmir blending ancient wisdom with futuristic tech.</p>
+  <p>Fields I work in:</p>
+  <ul>
+    <li>Psychology & Criminology</li>
+    <li>Coding (HTML, Python), Ethical Hacking Basics</li>
+    <li>Canva Product Design</li>
+    <li>Affiliate & WhatsApp Marketing</li>
+    <li>Content Creation, AI Tools, & Digital Strategy</li>
+  </ul>
+</section>
 
-     <p>&ldquo; Sustaining ropes of new ideas and enforcing hopes of creativity, productivity and innovation" . &rdquo; &copy; 2025 </p>
-  
-     <p><a href="https://www.facebook.com/search/top5tutorsforecommerce" target="_blank">Facebook</p>
+<section class="section" id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Career Roadmapping</li>
+    <li>AI Tool Integration</li>
+    <li>Prompt Engineering Guidance</li>
+    <li>Free Resources & Templates</li>
+  </ul>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/arish.itoo7890@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 GO SMART HOME | Designed by SamAr</p>
+</footer>
+
 </body>
-<p><b>Get OpenSource Courses With Professional Certificate</p>
-
 </html>
