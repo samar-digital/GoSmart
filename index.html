@@ -142,6 +142,21 @@
 
 <!-- Premium Contact Section -->
 <section class="section" id="contact" style="text-align:center;">
+  <h2>Get in Touch</h2>
+  <p style="font-size:1.1em; color:#555; max-width:600px; margin:10px auto;">
+    Fill out the form and we will get back to you shortly.
+  </p>
+
+  <!-- HubSpot form embed with redirect -->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "YOUR_PORTAL_ID",
+      formId: "YOUR_FORM_ID",
+      onFormSubmitted: function($form) {
+        window.location.href = "thankyou.html"; // redirect after submit
+
   <h2 style="font-size:2em; color:#222; margin-bottom:10px;">Get in Touch</h2>
   <p style="font-size:1.1em; color:#666; max-width:600px; margin:0 auto 20px;">
     Have a project in mind or want to collaborate? Fill out our secure contact form and we'll get back to you shortly.
