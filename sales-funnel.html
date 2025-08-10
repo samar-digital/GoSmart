@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to Get Potential Clients — eBook by SamAr. Learn how to attract high-quality clients without chasing them. Limited stock available.">
+  <title>How to Get Potential Clients - Limited Offer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+    .container { max-width: 800px; margin: auto; padding: 20px; background: white; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+    h1 { color: #222; }
+    .price { font-size: 1.5em; color: #e63946; }
+    .countdown { font-size: 1.2em; color: #d62828; font-weight: bold; margin: 10px 0; }
+    .stock { color: #f77f00; font-weight: bold; }
+    .cta-btn { background: #06d6a0; color: white; padding: 12px 20px; text-decoration: none; font-size: 1.2em; border-radius: 5px; display: inline-block; margin-top: 15px; }
+    .cta-btn:hover { background: #04b388; }
+    .form-section { margin-top: 30px; background: #f1f1f1; padding: 15px; border-radius: 8px; }
+    input[type=email] { padding: 10px; width: 80%; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    input[type=submit] { background: #118ab2; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+    input[type=submit]:hover { background: #0f6f91; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>How to Get Potential Clients 📈</h1>
+  <p><strong>Brand:</strong> SamAr</p>
+  <p class="price">₹33 — <span class="stock">Only 5 in stock!</span></p>
+  <p><strong>Location:</strong> Anantnag, JK</p>
+  <p><em>Unlock the Secrets to Finding High-Quality Clients Without Chasing Them.</em></p>
+  <ul>
+    <li>Attract clients who value your work</li>
+    <li>Convert leads into paying clients</li>
+    <li>Retain clients for repeat business</li>
+  </ul>
+
+  <div class="countdown" id="countdown">Offer ends in: 00:00:00</div>
+
+  <a class="cta-btn" href="https://www.facebook.com/marketplace/item/1522938792022255/" target="_blank">
+    📥 Buy Now on Facebook Marketplace
+  </a>
+
+  <div class="form-section">
+    <h3>🔥 Grab a FREE Bonus</h3>
+    <p>Enter your email to get a <strong>Free Client Attraction Cheat Sheet</strong>.</p>
+    <form action="#" method="post">
+      <input type="email" placeholder="Enter your email" required>
+      <input type="submit" value="Get Bonus">
+    </form>
+  </div>
+</div>
+
+<script>
+  // Countdown Timer (48 hours from now)
+  var countdownDate = new Date();
+  countdownDate.setHours(countdownDate.getHours() + 48);
+
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countdownDate - now;
+
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = "Offer ends in: " + hours + "h "
+    + minutes + "m " + seconds + "s";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "Offer Expired!";
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
